@@ -44,20 +44,20 @@ const NavBar = (props: Props) => {
         <div className="flex items-center space-x-4">
           <SearchBar />
           <div className="relative cursor-pointer">
-            <Link href="/signIn">
-              <div className="p-2 bg-gray-500 rounded-full">
+            <Link href="/signin">
+              <div className="p-2 bg-gray-200 rounded-full">
                 <CgProfile />
               </div>
             </Link>
           </div>
           <Link href="/cart">
-            <div className="p-2 bg-gray-500 rounded-full">
+            <div className="p-2 bg-gray-200 rounded-full">
               <CiShoppingCart size={20} />
             </div>
           </Link>
           <span
             onClick={() => setShowNav(!showNav)}
-            className="p-[9px] bg-gray-500 rounded-full md:hidden"
+            className="p-[9px] bg-gray-200 rounded-full md:hidden"
           >
             <BsChevronCompactUp
               className={`transition ease-in duration-150 ${
